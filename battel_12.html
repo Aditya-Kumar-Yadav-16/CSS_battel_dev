@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_battel_dev</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background: #191210;
+            height: 100vh;
+        }
+
+        .logo {
+            width: 160px;
+            height: 40px;
+            background: #ECA03D;
+            position: relative;
+        }
+
+        .logo::before,
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 120px;
+            background: #ECA03D;
+        }
+
+        .logo::before {
+            left: 0;
+            top: -40px;
+        }
+
+        .logo::after {
+            right: 0;
+            top: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"></div>
+</body>
+
+</html>
