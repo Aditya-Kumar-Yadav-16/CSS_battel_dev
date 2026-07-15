@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_battel_dev</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    place-items:center;
+    height:100vh;
+    background:#ececec;
+}
+
+.chrome{
+    width:220px;
+    aspect-ratio:1;
+    border-radius:50%;
+    background:
+        radial-gradient(circle,#4285F4 0 38px,#fff 39px 56px,#0000 57px),
+        conic-gradient(
+            #DB4437 0deg 120deg,
+            #F4B400 120deg 240deg,
+            #0F9D58 240deg 360deg
+        );
+    position:relative;
+}
+
+.chrome::before{
+    content:"";
+    position:absolute;
+    inset:24px;
+    border-radius:50%;
+    background:#fff;
+}
+
+.chrome::after{
+    content:"";
+    position:absolute;
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    background:#4285F4;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+    </style>
+
+</head>
+<body>
+    <div class="chrome"></div>
+</body>
+</html>
