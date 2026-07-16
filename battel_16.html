@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_battel_dev</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    place-items:center;
+    height:100vh;
+    background:#222;
+}
+
+.apple{
+    position:relative;
+    width:170px;
+    height:200px;
+    background:#fff;
+    border-radius:45% 45% 50% 50%;
+    transform:rotate(-18deg);
+}
+
+.apple::before{
+    content:"";
+    position:absolute;
+    width:80px;
+    height:80px;
+    background:#222;
+    border-radius:50%;
+    right:-8px;
+    top:18px;
+}
+
+.apple::after{
+    content:"";
+    position:absolute;
+    width:55px;
+    height:70px;
+    background:#fff;
+    border-radius:100% 0;
+    top:-45px;
+    left:92px;
+    transform:rotate(42deg);
+}
+    </style>
+
+</head>
+<body>
+    <div class="apple"></div>
+</body>
+</html>
