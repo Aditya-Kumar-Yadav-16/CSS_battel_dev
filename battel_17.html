@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_battel_dev</title>
+    <style>
+        body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#121212;
+}
+
+.spotify{
+    width:220px;
+    height:220px;
+    background:#1DB954;
+    border-radius:50%;
+    position:relative;
+}
+
+.spotify span{
+    position:absolute;
+    left:40px;
+    border:10px solid #121212;
+    border-color:#121212 transparent transparent transparent;
+    border-radius:50%;
+    transform:rotate(8deg);
+}
+
+.spotify span:nth-child(1){
+    width:130px;
+    height:95px;
+    top:55px;
+}
+
+.spotify span:nth-child(2){
+    width:110px;
+    height:75px;
+    top:80px;
+}
+
+.spotify span:nth-child(3){
+    width:90px;
+    height:55px;
+    top:105px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="spotify">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</body>
+</html>
