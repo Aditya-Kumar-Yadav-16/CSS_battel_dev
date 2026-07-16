@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#20232A;
+    margin:0;
+}
+
+.react{
+    width:220px;
+    height:220px;
+    position:relative;
+}
+
+.react::before,
+.react::after,
+.react{
+    border:8px solid #61DAFB;
+    border-radius:50%;
+}
+
+.react{
+    width:170px;
+    height:60px;
+    transform:rotate(0deg);
+}
+
+.react::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    transform:rotate(60deg);
+}
+
+.react::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    transform:rotate(-60deg);
+}
+
+.center{
+    width:28px;
+    height:28px;
+    background:#61DAFB;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+    </style>
+</head>
+<body>
+    <div class="react">
+    <div class="center"></div>
+</div>
+</body>
+</html>
